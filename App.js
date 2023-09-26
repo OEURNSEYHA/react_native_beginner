@@ -3,18 +3,35 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={styles.header}>
+      <View style={styles.menubar}>
+        <Text style={styles.text}> helo world</Text>       
+        <Text style={styles.text}> helo world</Text>       
+        <Text style={styles.text}> helo world</Text>       
+      </View>
     </View>
+    
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  header: {
+
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    backgroundColor: '#3498db',
+
   },
+  menubar: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 20,
+    backgroundColor: "gray",
+    marginTop: 30,
+   
+  },
+  text:{
+    color: '#ffff',
+    fontSize: 20
+  }
 });
