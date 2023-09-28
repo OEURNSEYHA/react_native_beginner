@@ -4,11 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.header}>
-      <View style={styles.menubar}>
-        <Text style={styles.text}> helo world</Text>       
-        <Text style={styles.text}> helo world</Text>       
-        <Text style={styles.text}> helo world</Text>       
-      </View>
+      <Text> hello </Text>
     </View>
     
   );
@@ -26,7 +22,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     padding: 20,
-    backgroundColor: "gray",
+    backgroundColor: "red",
     marginTop: 30,
    
   },
